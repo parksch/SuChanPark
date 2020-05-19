@@ -1,0 +1,4 @@
+﻿  Main.cpp
+c:\users\c-07\desktop\leeseoungjun-master\leeseoungjun\자료구조&디자인패턴\디자인패턴\예제\chapter_1\studentmanagementquest\main.cpp(4): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  LINK : C:\Users\c-07\Desktop\LeeSeoungJun-master\LeeSeoungJun\자료구조&디자인패턴\디자인패턴\예제\Chapter_1\StudentManagementQuest\Debug\StudentManagementQuest.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+  StudentManagementQuest.vcxproj -> C:\Users\c-07\Desktop\LeeSeoungJun-master\LeeSeoungJun\자료구조&디자인패턴\디자인패턴\예제\Chapter_1\StudentManagementQuest\Debug\StudentManagementQuest.exe
