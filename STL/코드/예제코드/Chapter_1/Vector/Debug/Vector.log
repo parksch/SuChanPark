@@ -1,0 +1,3 @@
+﻿  Vector.cpp
+c:\users\a11\desktop\찌르레기\woochancho\자료구조&디자인패턴\stl\코드\예제코드\chapter_1\vector\vector.cpp(488): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  Vector.vcxproj -> C:\Users\A11\Desktop\찌르레기\woochancho\자료구조&디자인패턴\STL\코드\예제코드\Chapter_1\Vector\Debug\Vector.exe
