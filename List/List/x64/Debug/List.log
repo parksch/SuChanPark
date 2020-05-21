@@ -1,5 +1,5 @@
-﻿  Character.cpp
+﻿  List.cpp
   main.cpp
-c:\users\sakoe\desktop\list\list\main.cpp(4): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+c:\users\sakoe\onedrive\바탕 화면\list\list\main.cpp(4): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
   코드를 생성하고 있습니다...
-  List.vcxproj -> C:\Users\sakoe\Desktop\List\x64\Debug\List.exe
+  List.vcxproj -> C:\Users\sakoe\OneDrive\바탕 화면\List\x64\Debug\List.exe
