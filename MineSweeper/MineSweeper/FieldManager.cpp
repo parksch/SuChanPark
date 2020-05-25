@@ -29,13 +29,61 @@ void FieldManager::CreateMine(int size,int width, int height)
 			randY = rand() % (m_Height);
 			randX = rand() % (m_Width);
 
-			if (m_Objects[randY][randX].State == EMPTY)
+			if (m_Objects[randY][randX].Value == 0)
 			{
-				m_Objects[randY][randX].State = MINE;
+				m_Objects[randY][randX].Value = 9;
 				break;
 			}
 		}
 	}
+}
+
+void FieldManager::FocusPoint(int x, int y)
+{
+	if (m_Objects[y][x].isFlag)
+	{
+		m_Draw.DrawPoint("¢Ì", x, y);
+	}
+	else if (m_Objects[y][x].isHide)
+	{
+		m_Draw.DrawPoint("¡á", x, y);
+	}
+	else
+	{
+		switch (m_Objects[y][x].Value)
+		{
+		case 0:
+			m_Draw.DrawPoint("¡à", x, y);
+			break;
+		case 1:
+			m_Draw.DrawPoint("¨ç", x, y);
+			break;
+		case 2:
+			m_Draw.DrawPoint("¨è", x, y);
+			break;
+		case 3:
+			m_Draw.DrawPoint("¨é", x, y);
+			break;
+		case 4:
+			m_Draw.DrawPoint("¨ê", x, y);
+			break;
+		case 5:
+			m_Draw.DrawPoint("¨ë", x, y);
+			break;
+		case 6:
+			m_Draw.DrawPoint("¨ì", x, y);
+			break;
+		case 7:
+			m_Draw.DrawPoint("¨í", x, y);
+			break;
+		case 8:
+			m_Draw.DrawPoint("¨î", x, y);
+			break;
+		default:
+			break;
+		}
+	}
+
 }
 
 void FieldManager::DrawPoint(int x, int y)
@@ -50,35 +98,51 @@ void FieldManager::DrawPoint(int x, int y)
 	}
 	else
 	{
-		switch (m_Objects[y][x].State)
+		switch (m_Objects[y][x].Value)
 		{
-		case EMPTY:
+		case 0:
 			m_Draw.DrawPoint("¡à", x, y);
 			break;
-		case ONE:
-			m_Draw.DrawPoint("¨ç", x, y);
-			break;
-		case TWO:
-			m_Draw.DrawPoint("¨è", x, y);
-			break;
-		case THREE:
-			m_Draw.DrawPoint("¨é", x, y);
-			break;
-		case FOUR:
-			m_Draw.DrawPoint("¨ê", x, y);
-			break;
-		case FIVE:
-			m_Draw.DrawPoint("¨ë", x, y);
-			break;
-		case SIX:
-			m_Draw.DrawPoint("¨ì", x, y);
-			break;
-		case SEVEN:
-			m_Draw.DrawPoint("¨í", x, y);
-			break;
-		case EIGHT:
-			m_Draw.DrawPoint("¨î", x, y);
-			break;
+		case 1:
+			RED
+				m_Draw.DrawPoint("¨ç", x, y);
+			ORIGINAL
+				break;
+		case 2:
+			BLOOD
+				m_Draw.DrawPoint("¨è", x, y);
+			ORIGINAL
+				break;
+		case 3:
+			YELLOW
+				m_Draw.DrawPoint("¨é", x, y);
+			ORIGINAL
+				break;
+		case 4:
+			GOLD
+				m_Draw.DrawPoint("¨ê", x, y);
+			ORIGINAL
+				break;
+		case 5:
+			GREEN
+				m_Draw.DrawPoint("¨ë", x, y);
+			ORIGINAL
+				break;
+		case 6:
+			BLUE_GREEN
+				m_Draw.DrawPoint("¨ì", x, y);
+			ORIGINAL
+				break;
+		case 7:
+			BLUE
+				m_Draw.DrawPoint("¨í", x, y);
+			ORIGINAL
+				break;
+		case 8:
+			DARK_BLUE
+				m_Draw.DrawPoint("¨î", x, y);
+			ORIGINAL
+				break;
 		default:
 			break;
 		}
@@ -112,13 +176,13 @@ bool FieldManager::Check(int x, int y)
 	{
 		return false;
 	}
-	else if (m_Objects[y][x].State == MINE)
+	else if (m_Objects[y][x].Value == 9)
 	{
 		for (int y = 0; y < m_Objects.size(); y++)
 		{
 			for (int x = 0; x < m_Objects[y].size(); x++)
 			{
-				if (m_Objects[y][x].State == MINE)
+				if (m_Objects[y][x].Value == 9)
 				{
 					PUPPLE
 						m_Draw.DrawPoint("¡Ø", x, y);
@@ -150,7 +214,7 @@ bool FieldManager::FlagCheck(int mine)
 	{
 		for (int x = 0; x < m_Width; x++)
 		{
-			if (m_Objects[y][x].State == MINE && m_Objects[y][x].isFlag)
+			if (m_Objects[y][x].Value == 9 && m_Objects[y][x].isFlag)
 			{
 				count++;
 			}
@@ -175,7 +239,7 @@ void FieldManager::OctagonCheck(int x, int y)
 		{
 			if (x + j >= 0 && x + j < m_Width && y + i >= 0 && y + i < m_Height)
 			{
-				if (m_Objects[y + i][x + j].State == MINE)
+				if (m_Objects[y + i][x + j].Value == 9)
 				{
 					count++;
 				}
@@ -185,7 +249,7 @@ void FieldManager::OctagonCheck(int x, int y)
 
 	if (count != 0)
 	{
-		m_Objects[y][x].State = (FIELD_STATE)count;
+		m_Objects[y][x].Value = count;
 		m_Objects[y][x].isHide = false;
 		DrawPoint(x, y);
 		return;

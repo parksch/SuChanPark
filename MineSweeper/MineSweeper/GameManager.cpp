@@ -106,6 +106,7 @@ void GameManager::Game_Enter()
 
 void GameManager::Game_Excute()
 {
+	char get;
 
 	for (int y = 0; y < m_Height; y++)
 	{
@@ -116,19 +117,30 @@ void GameManager::Game_Excute()
 	}
 
 	YELLOW
-	m_FieldManager.DrawPoint(m_Pos.X, m_Pos.Y);
+	m_FieldManager.FocusPoint(m_Pos.X, m_Pos.Y);
 	ORIGINAL
 	m_Draw.Game_UI(m_Width, m_Height, m_MineSize, m_FlagSize);
 	
 	while (1)
 	{
-		if (Input())
+		get = Input();
+		if (get != NULL)
 		{
-			if (m_FieldManager.Check(m_Pos.X, m_Pos.Y))
+			if (get == 'x')
 			{
-				m_Draw.GameOver(m_Width, m_Height);
-				Game_Exit();
-				return;
+				if (m_FieldManager.FlagCheck(m_MineSize))
+				{
+					return;
+				}
+			}
+			else if (get == 13)
+			{
+				if (m_FieldManager.Check(m_Pos.X, m_Pos.Y))
+				{
+					m_Draw.GameOver(m_Width, m_Height);
+					Game_Exit();
+					return;
+				}
 			}
 		}
 	}
@@ -139,7 +151,7 @@ void GameManager::Game_Exit()
 	m_FieldManager.Reset();
 }
 
-bool GameManager::Input()
+char GameManager::Input()
 {
 	if (kbhit())
 	{
@@ -169,16 +181,16 @@ bool GameManager::Input()
 		{
 			m_FlagSize += m_FieldManager.SetFlag(m_Pos.X, m_Pos.Y);
 			m_Draw.Game_UI(m_Width, m_Height, m_MineSize, m_FlagSize);
-			m_FieldManager.FlagCheck(m_MineSize);
+			return 'x';
 		}
 
 		if (get == 13)
 		{
-			return true;
+			return 13;
 		}
 	}
 
-	return false;
+	return NULL;
 }
 
 void GameManager::Move(int offSetX, int offSetY)
@@ -189,7 +201,7 @@ void GameManager::Move(int offSetX, int offSetY)
 		m_Pos.X += offSetX;
 		m_Pos.Y += offSetY;
 		YELLOW
-		m_FieldManager.DrawPoint(m_Pos.X, m_Pos.Y);
+		m_FieldManager.FocusPoint(m_Pos.X, m_Pos.Y);
 		ORIGINAL
 	}
 }

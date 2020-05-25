@@ -22,7 +22,7 @@ private:
 	void Game_Enter();
 	void Game_Excute();
 	void Game_Exit();
-	bool Input();
+	char Input();
 	void Move(int offSetX, int offSetY);
 private:
 	Draw m_Draw;

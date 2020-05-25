@@ -3,8 +3,8 @@
 
 struct Field
 {
-	Field() { State = EMPTY; isHide = true; isFlag = false; }
-	FIELD_STATE State;
+	Field() { Value = 0; isHide = true; isFlag = false; }
+	int Value;
 	bool isHide;
 	bool isFlag;
 };
@@ -15,6 +15,7 @@ public:
 	FieldManager();
 	~FieldManager();
 	void CreateMine(int size,int width,int height);
+	void FocusPoint(int x, int y);
 	void DrawPoint(int x,int y);
 	int SetFlag(int x, int y);
 	bool Check(int x, int y);
