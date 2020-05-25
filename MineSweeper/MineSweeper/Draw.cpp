@@ -28,13 +28,14 @@ int Draw::Game_Select_Size(int width, int height)
 
 void Draw::Game_UI(int width, int height, int mine, int flag)
 {
-	DrawMidText("ÀÌµ¿ : W A S D", width, height + 1);
+	DrawMidText("ÀÌµ¿ : W A S D ±ê¹ß : X ¼±ÅÃ : Enter", width, height + 1);
 	DrawMidText("±ê¹ß : " + to_string(flag) + " Áö·Ú : " + to_string(mine), width, height + 2);
 }
 
 void Draw::GameOver(int width, int height)
 {
 	DrawMidText("Game Over", width, height * 0.5f);
+	gotoxy(width, height + 3);
 	system("pause");
 }
 

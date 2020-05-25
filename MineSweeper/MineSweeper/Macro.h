@@ -38,5 +38,13 @@ enum DIFFICULTY
 enum FIELD_STATE
 {
 	EMPTY,
+	ONE,
+	TWO,
+	THREE,
+	FOUR,
+	FIVE,
+	SIX,
+	SEVEN,
+	EIGHT,
 	MINE,
 };

@@ -88,13 +88,13 @@ void GameManager::Game_Enter()
 	switch ((DIFFICULTY)input)
 	{
 	case EASY:
-		m_MineSize = (m_Width * m_Height)* 0.3f;
+		m_MineSize = (m_Width * m_Height)* 0.1f;
 		break;
 	case NOMAL:
-		m_MineSize = (m_Width * m_Height)* 0.5f;
+		m_MineSize = (m_Width * m_Height)* 0.3f;
 		break;
 	case HARD:
-		m_MineSize = (m_Width * m_Height)* 0.7f;
+		m_MineSize = (m_Width * m_Height)* 0.5f;
 		break;
 	default:
 		return;
@@ -169,6 +169,7 @@ bool GameManager::Input()
 		{
 			m_FlagSize += m_FieldManager.SetFlag(m_Pos.X, m_Pos.Y);
 			m_Draw.Game_UI(m_Width, m_Height, m_MineSize, m_FlagSize);
+			m_FieldManager.FlagCheck(m_MineSize);
 		}
 
 		if (get == 13)

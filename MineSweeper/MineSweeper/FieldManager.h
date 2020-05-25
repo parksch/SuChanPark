@@ -18,9 +18,13 @@ public:
 	void DrawPoint(int x,int y);
 	int SetFlag(int x, int y);
 	bool Check(int x, int y);
+	bool FlagCheck(int mine);
+	void OctagonCheck(int x, int y);
 	void Reset();
 private:
 	Draw m_Draw;
 	vector<vector<Field>> m_Objects;
+	int m_Width;
+	int m_Height;
 };
 
