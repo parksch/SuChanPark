@@ -34,3 +34,9 @@ enum DIFFICULTY
 	NOMAL,
 	HARD
 };
+
+enum FIELD_STATE
+{
+	EMPTY,
+	MINE,
+};

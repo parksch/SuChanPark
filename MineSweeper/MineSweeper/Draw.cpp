@@ -1,26 +1,48 @@
 #include "Draw.h"
 
-int Draw::Game_Menu()
+int Draw::Game_Menu(int width,int height)
 {
-	DrawMidText("1.Start", WIDTH, HEIGHT * 0.5f - 2);
-	DrawMidText("2.Exit", WIDTH, HEIGHT * 0.5f );
-	return MenuSelectCursor(2, 2, WIDTH * 0.5f - (strlen("1.Start")/2) - 1, HEIGHT * 0.5f -2);
+	DrawMidText("1.Start", width, height * 0.5f - 2);
+	DrawMidText("2.Size Change", width, height * 0.5f);
+	DrawMidText("3.Exit", width, height * 0.5f + 2);
+	return MenuSelectCursor(3, 2, width * 0.5f - (strlen("2.Size Change")/2), height * 0.5f -2);
 }
 
-int Draw::Game_Select_Difficulty()
+int Draw::Game_Select_Difficulty(int width, int height)
 {
-	DrawMidText("1.Easy", WIDTH, HEIGHT * 0.5f - 4);
-	DrawMidText("2.Nomal", WIDTH, HEIGHT * 0.5f - 2);
-	DrawMidText("3.Hard", WIDTH, HEIGHT * 0.5f );
-	DrawMidText("4.Exit", WIDTH, HEIGHT * 0.5f + 2);
-	return MenuSelectCursor(4, 2, WIDTH * 0.5f - (strlen("1.Start") / 2) - 1, HEIGHT * 0.5f - 4);
+	DrawMidText("1.Easy", width, height * 0.5f - 4);
+	DrawMidText("2.Nomal", width, height * 0.5f - 2);
+	DrawMidText("3.Hard", width, height * 0.5f );
+	DrawMidText("4.Exit", width, height * 0.5f + 2);
+	return MenuSelectCursor(4, 2, width * 0.5f - (strlen("1.Start") / 2) - 1, height * 0.5f - 4);
 }
 
-void Draw::DrawGameField()
+int Draw::Game_Select_Size(int width, int height)
 {
-	for (int y = 0; y < HEIGHT -1; y++)
+	DrawMidText("1.Easy", width, height * 0.5f - 4);
+	DrawMidText("2.Nomal", width, height * 0.5f - 2);
+	DrawMidText("3.Hard", width, height * 0.5f);
+	DrawMidText("4.Exit", width, height * 0.5f + 2);
+	return MenuSelectCursor(4, 2, width * 0.5f - (strlen("1.Start") / 2) - 1, height * 0.5f - 4);
+}
+
+void Draw::Game_UI(int width, int height, int mine, int flag)
+{
+	DrawMidText("ÀÌµ¿ : W A S D", width, height + 1);
+	DrawMidText("±ê¹ß : " + to_string(flag) + " Áö·Ú : " + to_string(mine), width, height + 2);
+}
+
+void Draw::GameOver(int width, int height)
+{
+	DrawMidText("Game Over", width, height * 0.5f);
+	system("pause");
+}
+
+void Draw::DrawGameField(int width,int height)
+{
+	for (int y = 0; y < height; y++)
 	{
-		for (int x = 0; x < WIDTH -1; x++)
+		for (int x = 0; x < width; x++)
 		{
 			DrawPoint("¡á",x,y);
 		}

@@ -124,17 +124,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Draw.cpp" />
+    <ClCompile Include="FieldManager.cpp" />
     <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Mine.cpp" />
-    <ClCompile Include="MineManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Draw.h" />
+    <ClInclude Include="FieldManager.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Macro.h" />
-    <ClInclude Include="Mine.h" />
-    <ClInclude Include="MineManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
