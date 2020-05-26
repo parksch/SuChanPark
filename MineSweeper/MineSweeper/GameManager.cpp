@@ -88,7 +88,7 @@ void GameManager::Game_Enter()
 	switch ((DIFFICULTY)input)
 	{
 	case EASY:
-		m_MineSize = 10;
+		m_MineSize = (m_Width * m_Height)* 0.1f;
 		break;
 	case NOMAL:
 		m_MineSize = (m_Width * m_Height)* 0.3f;
