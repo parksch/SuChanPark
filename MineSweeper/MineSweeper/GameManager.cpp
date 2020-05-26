@@ -88,7 +88,7 @@ void GameManager::Game_Enter()
 	switch ((DIFFICULTY)input)
 	{
 	case EASY:
-		m_MineSize = (m_Width * m_Height)* 0.1f;
+		m_MineSize = 10;
 		break;
 	case NOMAL:
 		m_MineSize = (m_Width * m_Height)* 0.3f;
@@ -130,6 +130,8 @@ void GameManager::Game_Excute()
 			{
 				if (m_FieldManager.FlagCheck(m_MineSize))
 				{
+					m_Draw.Game_Win(m_Width, m_Height);
+					Game_Exit();
 					return;
 				}
 			}
@@ -140,6 +142,15 @@ void GameManager::Game_Excute()
 					m_Draw.GameOver(m_Width, m_Height);
 					Game_Exit();
 					return;
+				}
+				else
+				{
+					if (m_FieldManager.EmptyCheck(m_MineSize))
+					{
+						m_Draw.Game_Win(m_Width, m_Height);
+						Game_Exit();
+						return;
+					}
 				}
 			}
 		}

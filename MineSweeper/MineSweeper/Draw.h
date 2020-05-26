@@ -11,6 +11,7 @@ public:
 	int Game_Select_Difficulty(int width, int height);
 	int Game_Select_Size(int width, int height);
 	void Game_UI(int width,int height,int mine,int flag);
+	void Game_Win(int width,int height);
 	void GameOver(int width, int height);
 	void DrawGameField(int width, int height);
 	void DrawPoint(string str, int x, int y);

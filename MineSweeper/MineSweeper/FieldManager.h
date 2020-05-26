@@ -20,8 +20,10 @@ public:
 	int SetFlag(int x, int y);
 	bool Check(int x, int y);
 	bool FlagCheck(int mine);
+	bool EmptyCheck(int mine);
 	void OctagonCheck(int x, int y);
 	void Reset();
+	void Win();
 private:
 	Draw m_Draw;
 	vector<vector<Field>> m_Objects;

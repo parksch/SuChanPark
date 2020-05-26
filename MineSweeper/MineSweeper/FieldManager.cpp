@@ -202,7 +202,9 @@ bool FieldManager::Check(int x, int y)
 		{
 			OctagonCheck(x, y);
 		}
+
 		return false;
+
 	}
 }
 
@@ -223,6 +225,30 @@ bool FieldManager::FlagCheck(int mine)
 
 	if (count == mine)
 	{
+		return true;
+	}
+
+	return false;
+}
+
+bool FieldManager::EmptyCheck(int mine)
+{
+	int count = 0;
+	
+	for (int y = 0; y < m_Objects.size(); y++)
+	{
+		for (int x = 0; x < m_Objects[y].size(); x++)
+		{
+			if (m_Objects[y][x].Value < 9 && !m_Objects[y][x].isHide) 
+			{
+				count++;
+			}
+		}
+	}
+
+	if (count == (m_Width * m_Height) - mine)
+	{
+		Win();
 		return true;
 	}
 
@@ -280,4 +306,22 @@ void FieldManager::OctagonCheck(int x, int y)
 void FieldManager::Reset()
 {
 	vector<vector<Field>>().swap(m_Objects);
+}
+
+void FieldManager::Win()
+{
+	for (int y = 0; y < m_Height; y++)
+	{
+		for (int x = 0; x < m_Width; x++)
+		{
+			if (m_Objects[y][x].Value == 9)
+			{
+				m_Draw.DrawPoint("¢Ì", x, y);
+			}
+			else
+			{
+				DrawPoint(x, y);
+			}
+		}
+	}
 }

@@ -32,6 +32,13 @@ void Draw::Game_UI(int width, int height, int mine, int flag)
 	DrawMidText("±ê¹ß : " + to_string(flag) + " Áö·Ú : " + to_string(mine), width, height + 2);
 }
 
+void Draw::Game_Win(int width, int height)
+{
+	DrawMidText("Game_Win", width, height*0.5f);
+	gotoxy(width, height + 3);
+	system("pause");
+}
+
 void Draw::GameOver(int width, int height)
 {
 	DrawMidText("Game Over", width, height * 0.5f);
