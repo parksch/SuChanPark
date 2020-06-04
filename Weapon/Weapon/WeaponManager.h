@@ -12,12 +12,3 @@ public:
 private:
 	list<Weapon*> m_Weapons;
 };
-
-
-//
-//WEAPON_DAGGER = 0,
-//WEAPON_GUN,
-//WEAPON_SWORD,
-//WEAPON_WAND,
-//WEAPON_BOW,
-//WEAPON_HAMMER,

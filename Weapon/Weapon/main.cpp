@@ -17,7 +17,6 @@ void main()
 		else
 		{
 			cout << "현재 무기 :";
-			curWeapon->ShowInfo();
 		}
 
 		cout << "♧ ♣ S H O P ♣ ♧" << endl;

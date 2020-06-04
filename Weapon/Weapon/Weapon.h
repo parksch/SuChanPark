@@ -1,6 +1,6 @@
 #pragma once
 #include "Macro.h"
-
+#include "Inventory.h"
 enum WEAPON
 {
 	WEAPON_START,
@@ -13,16 +13,14 @@ enum WEAPON
 	WEAPON_END,
 };
 
-class Weapon
+class Weapon : public Item 
 {
 protected:
 	WEAPON m_eType;
-	string m_strName;
 	int m_iDamage;
 	int m_iGold;
 public:
-	bool operator <(Weapon&weapon) { return this->m_strName > weapon.m_strName; }
-	void ShowInfo();
+	void View();
 	inline WEAPON GetType()
 	{
 		return m_eType;
@@ -36,7 +34,7 @@ public:
 		return m_iDamage;
 	}
 	void ShowShopInfo();
-	Weapon();
+	Weapon(string name);
 	virtual ~Weapon();
 };
 

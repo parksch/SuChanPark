@@ -1,8 +1,6 @@
 #include "Weapon.h"
 
-
-
-Weapon::Weapon()
+Weapon::Weapon(string name):Item(name)
 {
 
 }
@@ -33,10 +31,10 @@ void Weapon::ShowShopInfo()
 	}
 
 	cout << "가격 : " + to_string(m_iGold) + " 무기타입 : " + Type << endl;
-	cout << " 무기이름 : " + m_strName + " 공격력 : " + to_string(m_iDamage) << endl;
+	cout << " 무기이름 : " + GetName() + " 공격력 : " + to_string(m_iDamage) << endl;
 }
 
-void Weapon::ShowInfo()
+void Weapon::View()
 {
 	string Type;
 	switch (m_eType)
@@ -61,7 +59,7 @@ void Weapon::ShowInfo()
 		break;
 	}
 
-	cout << "무기타입 : " + Type + " 무기이름 : " + m_strName + " 공격력 : " + to_string(m_iDamage) << endl;
+	cout << "무기타입 : " + Type + " 무기이름 : " + GetName() + " 공격력 : " + to_string(m_iDamage) << endl;
 }
 
 Weapon::~Weapon()
@@ -69,21 +67,20 @@ Weapon::~Weapon()
 
 }
 
-Bow::Bow()
+Bow::Bow():Weapon("non")
 {
 
 }
-Bow::Bow(Bow* bow)
+
+Bow::Bow(Bow* bow):Weapon(bow->GetName())
 {
-	m_strName = bow->m_strName;
 	m_iDamage = bow->m_iDamage;
 	m_iGold = bow->m_iGold;
 	m_eType = bow->m_eType;
 }
 
-Bow::Bow(string Name, int Damage, int Gold)
+Bow::Bow(string Name, int Damage, int Gold):Weapon(Name)
 {
-	m_strName = Name;
 	m_iDamage = Damage;
 	m_iGold = Gold;
 	m_eType = WEAPON_BOW;
@@ -93,50 +90,44 @@ Bow::~Bow()
 
 }
 
-
-Dagger::Dagger()
+Dagger::Dagger():Weapon("non")
 {
 
 }
-Dagger::Dagger(Dagger* dagger)
+
+Dagger::Dagger(Dagger* dagger) : Weapon(dagger->GetName())
 {
-	m_strName = dagger->m_strName;
 	m_iDamage = dagger->m_iDamage;
 	m_iGold = dagger->m_iGold;
 	m_eType = dagger->m_eType;
 }
 
-void Save(ofstream& Save)
+Dagger::Dagger(string Name, int Damage, int Gold):Weapon(Name)
 {
-
-}
-Dagger::Dagger(string Name, int Damage, int Gold)
-{
-	m_strName = Name;
 	m_iDamage = Damage;
 	m_iGold = Gold;
 	m_eType = WEAPON_DAGGER;
 }
+
 Dagger::~Dagger()
 {
 
 }
 
 
-Gun::Gun()
+Gun::Gun():Weapon("name")
 {
 
 }
-Gun::Gun(Gun* gun)
+
+Gun::Gun(Gun* gun):Weapon(gun->GetName())
 {
-	m_strName = gun->m_strName;
 	m_iDamage = gun->m_iDamage;
 	m_iGold = gun->m_iGold;
 	m_eType = gun->m_eType;
 }
-Gun::Gun(string Name, int Damage, int Gold)
+Gun::Gun(string Name, int Damage, int Gold):Weapon(Name)
 {
-	m_strName = Name;
 	m_iDamage = Damage;
 	m_iGold = Gold;
 	m_eType = WEAPON_GUN;
@@ -146,21 +137,20 @@ Gun::~Gun()
 
 }
 
-Sword::Sword()
+Sword::Sword():Weapon("non")
 {
 
 }
-Sword::Sword(Sword* sword)
+
+Sword::Sword(Sword* sword):Weapon(sword->GetName())
 {
-	m_strName = sword->m_strName;
 	m_iDamage = sword->m_iDamage;
 	m_iGold = sword->m_iGold;
 	m_eType = sword->m_eType;
 }
 
-Sword::Sword(string Name, int Damage, int Gold)
+Sword::Sword(string Name, int Damage, int Gold) :Weapon(Name)
 {
-	m_strName = Name;
 	m_iDamage = Damage;
 	m_iGold = Gold;
 	m_eType = WEAPON_SWORD;
@@ -173,22 +163,20 @@ Sword::~Sword()
 
 
 
-Wand::Wand()
+Wand::Wand():Weapon("non")
 {
 
 }
 
-Wand::Wand(Wand* wand)
+Wand::Wand(Wand* wand):Weapon(wand->GetName())
 {
-	m_strName = wand->m_strName;
 	m_iDamage = wand->m_iDamage;
 	m_iGold = wand->m_iGold;
 	m_eType = wand->m_eType;
 }
 
-Wand::Wand(string Name, int Damage, int Gold)
+Wand::Wand(string Name, int Damage, int Gold):Weapon(Name)
 {
-	m_strName = Name;
 	m_iDamage = Damage;
 	m_iGold = Gold;
 	m_eType = WEAPON_WAND;
@@ -200,22 +188,20 @@ Wand::~Wand()
 }
 
 
-Hammer::Hammer()
+Hammer::Hammer():Weapon("non")
 {
 
 }
 
-Hammer::Hammer(Hammer* hammer)
+Hammer::Hammer(Hammer* hammer):Weapon(hammer->GetName())
 {
-	m_strName = hammer->m_strName;
 	m_iDamage = hammer->m_iDamage;
 	m_iGold = hammer->m_iGold;
 	m_eType = hammer->m_eType;
 }
 
-Hammer::Hammer(string Name, int Damage, int Gold)
+Hammer::Hammer(string Name, int Damage, int Gold) :Weapon(Name)
 {
-	m_strName = Name;
 	m_iDamage = Damage;
 	m_iGold = Gold;
 	m_eType = WEAPON_WAND;
