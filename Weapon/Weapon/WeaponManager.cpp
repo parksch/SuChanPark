@@ -2,6 +2,9 @@
 
 WeaponManager* WeaponManager::m_This = NULL;
 
+bool GoldSort(Weapon* object, Weapon* object2) { return object->GetGold() > object2->GetGold(); }
+bool AttackSort(Weapon *object, Weapon *object2) { return object->GetAttack() < object2->GetAttack(); }
+
 WeaponManager::WeaponManager()
 {
 	ifstream Load;
@@ -46,46 +49,64 @@ WeaponManager::~WeaponManager()
 
 void WeaponManager::ShowList(int type, Weapon *& weapon)
 {
-	int input;
+	int input = 0;
 	int max = 1;
-	vector<Weapon*> temp;
+	list<Weapon*> temp;
+
+	for (list<Weapon*>::iterator iter = m_Weapons.begin(); iter != m_Weapons.end(); iter++)
+	{
+		if ((*iter)->GetType() == (WEAPON)type)
+		{
+			temp.push_back((*iter));
+		}
+	}
+
 	while (1)
 	{
 		system("cls");
 
-		for (vector<Weapon*>::iterator iter = m_Weapons.begin(); iter != m_Weapons.end(); iter++)
+		for (list<Weapon*>::iterator iter = temp.begin(); iter != temp.end(); iter++)
 		{
-			if ((*iter)->GetType() == (WEAPON)type)
-			{
-				cout << to_string(max) + ". ";
-				(*iter)->ShowShopInfo();
-				temp.push_back((*iter));
-				max++;
-			}
+			cout << to_string(max) + ". ";
+			(*iter)->ShowShopInfo();
+			max++;
 		}
 
+		cout << to_string(temp.size() + 1) + " : 금액 순으로 정렬 " +
+			to_string(temp.size() + 2) + " : 공격력 순으로 정렬 " << endl;
 		cin >> input;
 
-		if (input < max)
+		if (input < temp.size())
 		{
-			if (weapon != NULL)
+			list<Weapon*>::iterator f = temp.begin();
+			for (int i = 0; i < input - 1; i++)
 			{
-				delete weapon;
-				weapon = NULL;
+				f++;
 			}
-			if ((WEAPON)type == WEAPON_BOW)
-				weapon = new Bow((Bow*)temp[input - 1]);
-			else if ((WEAPON)type == WEAPON_HAMMER)
-				weapon = new Hammer((Hammer*)temp[input - 1]);
-			else if ((WEAPON)type == WEAPON_DAGGER)
-				weapon = new Dagger((Dagger*)temp[input - 1]);
-			else if ((WEAPON)type == WEAPON_GUN)
-				weapon = new Gun((Gun*)temp[input - 1]);
-			else if ((WEAPON)type == WEAPON_SWORD)
-				weapon = new Sword((Sword*)temp[input - 1]);
-			else if ((WEAPON)type == WEAPON_WAND)
-				weapon = new Wand((Wand*)temp[input - 1]);
+
+			if (type == WEAPON_BOW)
+				weapon = new Bow((Bow*)(*f));
+			else if (type == WEAPON_HAMMER)
+				weapon = new Hammer((Hammer*)(*f));
+			else if (type == WEAPON_DAGGER)
+				weapon = new Dagger((Dagger*)(*f));
+			else if (type == WEAPON_GUN)
+				weapon = new Gun((Gun*)(*f));
+			else if (type == WEAPON_SWORD)
+				weapon = new Sword((Sword*)(*f));
+			else if (type == WEAPON_WAND)
+				weapon = new Wand((Wand*)(*f));
 			return;
+		}
+		else if (input == temp.size()+1)
+		{
+			max = 1;
+			temp.sort(GoldSort);
+		}
+		else if (input == temp.size()+2)
+		{
+			max = 1;
+			temp.sort(AttackSort);
 		}
 		else
 		{

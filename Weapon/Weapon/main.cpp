@@ -1,3 +1,4 @@
+#pragma once
 #include "WeaponManager.h"
 
 void main()

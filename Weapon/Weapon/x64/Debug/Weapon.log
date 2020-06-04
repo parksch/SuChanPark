@@ -1,0 +1,4 @@
+﻿  WeaponManager.cpp
+c:\users\sakoe\onedrive\바탕 화면\weapon\weapon\weaponmanager.cpp(3): warning C4356: 'Singleton<WeaponManager>::m_This': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\onedrive\바탕 화면\weapon\weapon\weaponmanager.cpp(11): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+  Weapon.vcxproj -> C:\Users\sakoe\OneDrive\바탕 화면\Weapon\x64\Debug\Weapon.exe

@@ -21,6 +21,7 @@ protected:
 	int m_iDamage;
 	int m_iGold;
 public:
+	bool operator <(Weapon&weapon) { return this->m_strName > weapon.m_strName; }
 	void ShowInfo();
 	inline WEAPON GetType()
 	{
@@ -29,6 +30,10 @@ public:
 	inline int GetGold()
 	{
 		return m_iGold;
+	}
+	inline int GetAttack()
+	{
+		return m_iDamage;
 	}
 	void ShowShopInfo();
 	Weapon();
