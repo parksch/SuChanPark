@@ -1,24 +1,45 @@
 #pragma once
 #include "WeaponManager.h"
+#include "Player.h"
 
+void Shop(Player *player);
 void main()
 {
+	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CRTDBG_ALLOC_MEM_DF);
 	int input;
-	Weapon* curWeapon = NULL;
+	Player player;
 
 	while (1)
 	{
 		system("cls");
+		cout << "♧ ♣ S H O P ♣ ♧" << endl;
+		cout << "1.Inventory" << endl;
+		cout << "2.Shop" << endl;
+		cout << "3. 종료" << endl;
+		cin >> input;
 
-		if (curWeapon == NULL)
+		switch (input)
 		{
-			cout << "현재 무기 : 없음" << endl;
+		case 1:
+			player.DisplayAll();
+			break;
+		case 2:
+			Shop(&player);
+			break;
+		default:
+			WeaponManager::DestoryInstance();
+			return;
 		}
-		else
-		{
-			cout << "현재 무기 :";
-		}
+	}
+}
 
+void Shop(Player * player)
+{
+	int input;
+
+	while (1)
+	{
+		system("cls");
 		cout << "♧ ♣ S H O P ♣ ♧" << endl;
 		cout << "1.Dagger" << endl;
 		cout << "2.Gun" << endl;
@@ -31,12 +52,10 @@ void main()
 
 		if (input < 7)
 		{
-			WeaponManager::GetInstance()->ShowList(input - 1,curWeapon);
+			WeaponManager::GetInstance()->ShowList(input - 1,player->GetInventory());
 		}
 		else
 		{
-			WeaponManager::DestoryInstance();
-			delete curWeapon;
 			return;
 		}
 	}

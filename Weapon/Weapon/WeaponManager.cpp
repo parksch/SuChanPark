@@ -47,7 +47,7 @@ WeaponManager::~WeaponManager()
 {
 }
 
-void WeaponManager::ShowList(int type, Weapon *& weapon)
+void WeaponManager::ShowList(int type, Inventory * inventory)
 {
 	int input = 0;
 	int max = 1;
@@ -85,17 +85,17 @@ void WeaponManager::ShowList(int type, Weapon *& weapon)
 			}
 
 			if (type == WEAPON_BOW)
-				weapon = new Bow((Bow*)(*f));
+				inventory->FindInventory("Bow")->AddInventory(new Bow((Bow*)(*f)));
 			else if (type == WEAPON_HAMMER)
-				weapon = new Hammer((Hammer*)(*f));
+				inventory->FindInventory("Hammer")->AddInventory(new Bow((Bow*)(*f)));
 			else if (type == WEAPON_DAGGER)
-				weapon = new Dagger((Dagger*)(*f));
+				inventory->FindInventory("Dagger")->AddInventory(new Bow((Bow*)(*f)));
 			else if (type == WEAPON_GUN)
-				weapon = new Gun((Gun*)(*f));
+				inventory->FindInventory("Gun")->AddInventory(new Bow((Bow*)(*f)));
 			else if (type == WEAPON_SWORD)
-				weapon = new Sword((Sword*)(*f));
+				inventory->FindInventory("Sword")->AddInventory(new Bow((Bow*)(*f)));
 			else if (type == WEAPON_WAND)
-				weapon = new Wand((Wand*)(*f));
+				inventory->FindInventory("Wand")->AddInventory(new Bow((Bow*)(*f)));
 			return;
 		}
 		else if (input == temp.size()+1)
