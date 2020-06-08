@@ -9,6 +9,7 @@ public:
 	void DisplayAll();
 	inline Inventory* GetInventory() { return bag; }
 private:
+	void OpenBag(string name);
 	Inventory *bag;
 };
 

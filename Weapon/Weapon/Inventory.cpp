@@ -45,7 +45,11 @@ Bag::Bag(string name):Inventory(name)
 
 Bag::~Bag()
 {
-	m_InventoryList.clear();
+	for (vector<Inventory*>::iterator  i = m_InventoryList.begin(); i != m_InventoryList.end(); i++)
+	{
+		delete (*i);
+	}
+	vector<Inventory*>().swap(m_InventoryList);
 }
 
 void Bag::View()

@@ -1,6 +1,7 @@
 #pragma once
 #include "WeaponManager.h"
 #include "Player.h"
+#include<crtdbg.h>
 
 void Shop(Player *player);
 void main()

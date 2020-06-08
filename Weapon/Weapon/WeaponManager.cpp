@@ -45,6 +45,12 @@ WeaponManager::WeaponManager()
 
 WeaponManager::~WeaponManager()
 {
+	for (list<Weapon*>::iterator i = m_Weapons.begin(); i != m_Weapons.end(); i++)
+	{
+		delete (*i);
+	}
+
+	m_Weapons.clear();
 }
 
 void WeaponManager::ShowList(int type, Inventory * inventory)
@@ -57,7 +63,18 @@ void WeaponManager::ShowList(int type, Inventory * inventory)
 	{
 		if ((*iter)->GetType() == (WEAPON)type)
 		{
-			temp.push_back((*iter));
+			if (type == WEAPON_BOW)
+				temp.push_back(new Bow((Bow*)(*iter)));
+			else if (type == WEAPON_HAMMER)
+				temp.push_back(new Hammer((Hammer*)(*iter)));
+			else if (type == WEAPON_DAGGER)
+				temp.push_back(new Dagger((Dagger*)(*iter)));
+			else if (type == WEAPON_GUN)
+				temp.push_back(new Gun((Gun*)(*iter)));
+			else if (type == WEAPON_SWORD)
+				temp.push_back(new Sword((Sword*)(*iter)));
+			else if (type == WEAPON_WAND)
+				temp.push_back(new Wand((Wand*)(*iter)));
 		}
 	}
 
@@ -74,6 +91,7 @@ void WeaponManager::ShowList(int type, Inventory * inventory)
 
 		cout << to_string(temp.size() + 1) + " : 금액 순으로 정렬 " +
 			to_string(temp.size() + 2) + " : 공격력 순으로 정렬 " << endl;
+		cout << to_string(temp.size() + 3) + " : 나가기 " << endl;
 		cin >> input;
 
 		if (input < temp.size())
@@ -87,15 +105,21 @@ void WeaponManager::ShowList(int type, Inventory * inventory)
 			if (type == WEAPON_BOW)
 				inventory->FindInventory("Bow")->AddInventory(new Bow((Bow*)(*f)));
 			else if (type == WEAPON_HAMMER)
-				inventory->FindInventory("Hammer")->AddInventory(new Bow((Bow*)(*f)));
+				inventory->FindInventory("Hammer")->AddInventory(new Hammer((Hammer*)(*f)));
 			else if (type == WEAPON_DAGGER)
-				inventory->FindInventory("Dagger")->AddInventory(new Bow((Bow*)(*f)));
+				inventory->FindInventory("Dagger")->AddInventory(new Dagger((Dagger*)(*f)));
 			else if (type == WEAPON_GUN)
-				inventory->FindInventory("Gun")->AddInventory(new Bow((Bow*)(*f)));
+				inventory->FindInventory("Gun")->AddInventory(new Gun((Gun*)(*f)));
 			else if (type == WEAPON_SWORD)
-				inventory->FindInventory("Sword")->AddInventory(new Bow((Bow*)(*f)));
+				inventory->FindInventory("Sword")->AddInventory(new Sword((Sword*)(*f)));
 			else if (type == WEAPON_WAND)
-				inventory->FindInventory("Wand")->AddInventory(new Bow((Bow*)(*f)));
+				inventory->FindInventory("Wand")->AddInventory(new Wand((Wand*)(*f)));
+
+			for (list<Weapon*>::iterator i = temp.begin(); i != temp.end(); i++)
+			{
+				delete (*i);
+			}
+			temp.clear();
 			return;
 		}
 		else if (input == temp.size()+1)
@@ -110,6 +134,12 @@ void WeaponManager::ShowList(int type, Inventory * inventory)
 		}
 		else
 		{
+
+			for (list<Weapon*>::iterator i = temp.begin(); i != temp.end(); i++)
+			{
+				delete (*i);
+			}
+			temp.clear();
 			return;
 		}
 	}

@@ -1,3 +1,2 @@
-﻿  main.cpp
-c:\users\sakoe\desktop\suchanpark\weapon\weapon\main.cpp(7): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+﻿  Player.cpp
   Weapon.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\Weapon\x64\Debug\Weapon.exe
