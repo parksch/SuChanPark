@@ -3,9 +3,6 @@
 #include <list>
 #include "Weapon.h"
 
-
-class Player;
-
 class WeaponManager : public Singleton<WeaponManager>
 {
 public:

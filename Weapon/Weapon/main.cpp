@@ -1,14 +1,17 @@
 #pragma once
 #include "WeaponManager.h"
+#include "CharacterFactory.h"
 #include "Player.h"
 #include<crtdbg.h>
 
-void Shop(Player *player);
+void Shop(JobClass *&player);
+void Init(JobClass *&player);
 void main()
 {
 	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CRTDBG_ALLOC_MEM_DF);
+	JobClass *player;
+	Init(player);
 	int input;
-	Player player;
 
 	while (1)
 	{
@@ -22,10 +25,10 @@ void main()
 		switch (input)
 		{
 		case 1:
-			player.DisplayAll();
+			player->DisplayAll();
 			break;
 		case 2:
-			Shop(&player);
+			Shop(player);
 			break;
 		default:
 			WeaponManager::DestoryInstance();
@@ -34,7 +37,7 @@ void main()
 	}
 }
 
-void Shop(Player * player)
+void Shop(Player *&player)
 {
 	int input;
 
@@ -58,6 +61,42 @@ void Shop(Player * player)
 		else
 		{
 			return;
+		}
+	}
+}
+
+void Init(Player *&player)
+{
+	int input;
+	while (1)
+	{
+		system("cls");
+		cout << "당신의 직업을 선택 하세요" << endl;
+		cout << "1.Knight" << endl;
+		cout << "2.Archer" << endl;
+		cout << "3.Thiff" << endl;
+		cout << "4.Wizard" << endl;
+		cin >> input;
+		switch (input)
+		{
+		case 1:
+			player = (Player*)KnightCharacter().CreateJobClass();
+			player->SetWeapon(KnightCharacter().CreateWeapon());
+			return;
+		case 2:
+			player = (Player*)ArcherCharacter().CreateJobClass();
+			player->SetWeapon(ArcherCharacter().CreateWeapon());
+			return;
+		case 3:
+			player = (Player*)ThiffCharacter().CreateJobClass();
+			player->SetWeapon(ArcherCharacter().CreateWeapon());
+			return;
+		case 4:
+			player = (Player*)WizardCharacter().CreateJobClass();
+			player->SetWeapon(ArcherCharacter().CreateWeapon());
+			return;
+		default:
+			break;
 		}
 	}
 }

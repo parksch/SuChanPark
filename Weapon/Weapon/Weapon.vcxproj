@@ -123,14 +123,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CharacterFactory.cpp" />
     <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="JobClass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="WeaponManager.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CharacterFactory.h" />
     <ClInclude Include="Inventory.h" />
+    <ClInclude Include="JobClass.h" />
     <ClInclude Include="Macro.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="Singleton.h" />

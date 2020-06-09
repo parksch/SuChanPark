@@ -88,6 +88,11 @@ Inventory * Bag::FindInventory(string name)
 	return NULL;
 }
 
+Inventory * Bag::FindInventory(int index)
+{
+	return FindInventory(m_InventoryList[index]->GetName());
+}
+
 void Bag::RemoveInventory(Inventory * inventory)
 {
 	vector<Inventory*>::iterator remove = find(m_InventoryList.begin(), m_InventoryList.end(), inventory);

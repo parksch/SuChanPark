@@ -1,2 +1,35 @@
-﻿  Player.cpp
-  Weapon.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\Weapon\x64\Debug\Weapon.exe
+﻿  CharacterFactory.cpp
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\inventory.h(41): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  JobClass.cpp
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\inventory.h(41): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Player.cpp
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\inventory.h(41): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.h(10): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(3): error C2614: 'Player': 멤버 초기화가 잘못되었습니다. 'bag'이(가) 기본 또는 멤버가 아닙니다.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(9): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(19): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(22): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(24): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(30): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.cpp(31): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+  main.cpp
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\inventory.h(41): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\player.h(10): error C2248: 'JobClass::bag': private 멤버('JobClass' 클래스에서 선언)에 액세스할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(13): note: 'JobClass::bag' 선언을 참조하십시오.
+  c:\users\sakoe\desktop\suchanpark\weapon\weapon\jobclass.h(5): note: 'JobClass' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\weapon\weapon\main.cpp(10): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
+  코드를 생성하고 있습니다...

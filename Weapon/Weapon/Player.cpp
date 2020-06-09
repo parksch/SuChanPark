@@ -2,12 +2,6 @@
 
 Player::Player(): bag(new Bag("Main"))
 {
-	bag->AddInventory(new Bag("Bow"));
-	bag->AddInventory(new Bag("Gun"));
-	bag->AddInventory(new Bag("Sword"));
-	bag->AddInventory(new Bag("Hammer"));
-	bag->AddInventory(new Bag("Dagger"));
-	bag->AddInventory(new Bag("Wand"));
 }
 
 Player::~Player()
@@ -22,40 +16,19 @@ void Player::DisplayAll()
 	while (1)
 	{
 		system("cls");
-		cout << "♧ ♣ S H O P ♣ ♧" << endl;
-		cout << "1.Dagger" << endl;
-		cout << "2.Gun" << endl;
-		cout << "3.Sword" << endl;
-		cout << "4.Wand" << endl;
-		cout << "5.Bow" << endl;
-		cout << "6.Hammer" << endl;
-		cout << "7. 종료" << endl;
+		bag->View();
 		cin >> input;
 
-		if (input < 7)
+		if (input < bag->GetSize())
 		{
-			switch (input)
+			if (EquipCheck(bag->FindInventory(input - 1)))
 			{
-			case 1:
-			OpenBag("Dagger");
-				break;
-			case 2:
-			OpenBag("Gun");
-				break;
-			case 3:
-			OpenBag("Sword");
-				break;
-			case 4:
-			OpenBag("Wand");
-				break;
-			case 5:
-			OpenBag("Bow");
-				break;
-			case 6:
-			OpenBag("Hammer");
-				break;
-			default:
-				break;
+				cout << "그 아이템은 장비 할수 없습니다" << endl;
+			}
+			else
+			{
+				SetWeapon((Weapon*)bag->FindInventory(input - 1));
+				bag->RemoveInventory(bag->FindInventory(input - 1));
 			}
 		}
 		else
@@ -65,9 +38,3 @@ void Player::DisplayAll()
 	}
 }
 
-void Player::OpenBag(string name)
-{
-	system("cls");
-	bag->FindInventory(name)->View();
-	system("pause");
-}

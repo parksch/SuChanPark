@@ -8,7 +8,6 @@ public:
 	virtual ~Inventory();
 	virtual void View() = 0;
 	virtual void AddInventory(Inventory* inventory) = 0;
-	virtual Inventory* FindInventory(string name) = 0;
 	virtual void RemoveInventory(Inventory* inventory) = 0;
 	void SetParent(Inventory* _parent);
 	Inventory* GetParent();
@@ -26,7 +25,6 @@ public:
 	~Item();
 	virtual void View();
 	void AddInventory(Inventory* inventory) {}
-	Inventory* FindInventory(string name) { return NULL; }
 	void RemoveInventory(Inventory* inventory) {}
 };
 
@@ -38,7 +36,9 @@ public:
 	void View() override;
 	void AddInventory(Inventory* inventory) override;
 	Inventory* FindInventory(string name);
+	Inventory* FindInventory(int index);
 	void RemoveInventory(Inventory* inventory) override;
+	int GetSize() { return m_InventoryList.size(); }
 private:
 	vector<Inventory*> m_InventoryList;
 };

@@ -1,7 +1,7 @@
 #pragma once
 #include "Inventory.h"
-
-class Player
+#include "JobClass.h"
+class Player : public JobClass
 {
 public:
 	Player();
@@ -9,7 +9,5 @@ public:
 	void DisplayAll();
 	inline Inventory* GetInventory() { return bag; }
 private:
-	void OpenBag(string name);
-	Inventory *bag;
 };
 
