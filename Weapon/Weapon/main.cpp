@@ -12,30 +12,30 @@ void main()
 	Init(player);
 	int input;
 
-	//while (1)
-	//{
-	//	system("cls");
-	//	cout << "♧ ♣ S H O P ♣ ♧" << endl;
-	//	cout << "1.Inventory" << endl;
-	//	cout << "2.Shop" << endl;
-	//	cout << "3. 종료" << endl;
-	//	cin >> input;
+	while (1)
+	{
+		system("cls");
+		cout << "♧ ♣ S H O P ♣ ♧" << endl;
+		cout << "1.Inventory" << endl;
+		cout << "2.Shop" << endl;
+		cout << "3. 종료" << endl;
+		cin >> input;
 
-	//	switch (input)
-	//	{
-	//	case 1:
-	//		player->DisplayAll();
-	//		break;
-	//	case 2:
-	//		Shop(player);
-	//		break;
-	//	default:
-	//		WeaponManager::DestoryInstance();
-	//		return;
-	//	}
-	//}
+		switch (input)
+		{
+		case 1:
+			player->DisplayAll();
+			break;
+		case 2:
+			Shop(player);
+			break;
+		default:
+			WeaponManager::DestoryInstance();
+			delete player;
+			return;
+		}
+	}
 
-	delete player;
 }
 
 void Shop(Character *&player)

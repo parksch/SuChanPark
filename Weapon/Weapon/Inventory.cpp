@@ -58,11 +58,13 @@ void Bag::View()
 	cout << "----------------------------------" << endl;
 	vector<Inventory*>::iterator begin = m_InventoryList.begin();
 	vector<Inventory*>::iterator end = m_InventoryList.end();
-
+	int count = 1;
 	while (begin != end)
 	{
+		cout << to_string(count) + ". ";
 		(*begin)->View();
 		begin++;
+		count++;
 	}
 
 	cout << "----------------------------------" << endl;
