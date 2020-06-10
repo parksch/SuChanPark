@@ -90,7 +90,7 @@ Inventory * Bag::FindInventory(string name)
 
 Inventory * Bag::FindInventory(int index)
 {
-	return FindInventory(m_InventoryList[index]->GetName());
+	return  FindInventory(m_InventoryList[index]->GetName());
 }
 
 void Bag::RemoveInventory(Inventory * inventory)

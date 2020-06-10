@@ -9,33 +9,33 @@ public:
 	~CharacterFactory();
 
 	virtual Weapon * CreateWeapon() = 0;
-	virtual JobClass* CreateJobClass() = 0;
+	virtual Character* CreateJobClass() = 0;
 };
 
 class KnightCharacter : public CharacterFactory
 {
 public:
 	virtual Weapon * CreateWeapon();
-	virtual JobClass* CreateJobClass();
+	virtual Character* CreateJobClass();
 };
 
 class ArcherCharacter : public CharacterFactory
 {
 public:
 	virtual Weapon * CreateWeapon();
-	virtual JobClass* CreateJobClass();
+	virtual Character* CreateJobClass();
 };
 
 class WizardCharacter : public CharacterFactory
 {
 public:
 	virtual Weapon * CreateWeapon();
-	virtual JobClass* CreateJobClass();
+	virtual Character* CreateJobClass();
 };
 
 class ThiffCharacter : public CharacterFactory
 {
 public:
 	virtual Weapon * CreateWeapon();
-	virtual JobClass * CreateJobClass();
+	virtual Character * CreateJobClass();
 };

@@ -1,43 +1,44 @@
 #pragma once
 #include "WeaponManager.h"
 #include "CharacterFactory.h"
-#include "Player.h"
 #include<crtdbg.h>
 
-void Shop(JobClass *&player);
-void Init(JobClass *&player);
+void Shop(Character *&player);
+void Init(Character *&player);
 void main()
 {
 	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CRTDBG_ALLOC_MEM_DF);
-	JobClass *player;
+	Character *player;
 	Init(player);
 	int input;
 
-	while (1)
-	{
-		system("cls");
-		cout << "♧ ♣ S H O P ♣ ♧" << endl;
-		cout << "1.Inventory" << endl;
-		cout << "2.Shop" << endl;
-		cout << "3. 종료" << endl;
-		cin >> input;
+	//while (1)
+	//{
+	//	system("cls");
+	//	cout << "♧ ♣ S H O P ♣ ♧" << endl;
+	//	cout << "1.Inventory" << endl;
+	//	cout << "2.Shop" << endl;
+	//	cout << "3. 종료" << endl;
+	//	cin >> input;
 
-		switch (input)
-		{
-		case 1:
-			player->DisplayAll();
-			break;
-		case 2:
-			Shop(player);
-			break;
-		default:
-			WeaponManager::DestoryInstance();
-			return;
-		}
-	}
+	//	switch (input)
+	//	{
+	//	case 1:
+	//		player->DisplayAll();
+	//		break;
+	//	case 2:
+	//		Shop(player);
+	//		break;
+	//	default:
+	//		WeaponManager::DestoryInstance();
+	//		return;
+	//	}
+	//}
+
+	delete player;
 }
 
-void Shop(Player *&player)
+void Shop(Character *&player)
 {
 	int input;
 
@@ -65,9 +66,15 @@ void Shop(Player *&player)
 	}
 }
 
-void Init(Player *&player)
+void Init(Character *&player)
 {
 	int input;
+	vector<CharacterFactory*> characterlist;
+	characterlist.push_back(new KnightCharacter());
+	characterlist.push_back(new ArcherCharacter());
+	characterlist.push_back(new ThiffCharacter());
+	characterlist.push_back(new WizardCharacter());
+
 	while (1)
 	{
 		system("cls");
@@ -77,26 +84,19 @@ void Init(Player *&player)
 		cout << "3.Thiff" << endl;
 		cout << "4.Wizard" << endl;
 		cin >> input;
-		switch (input)
+
+		if (input < characterlist.size() + 1)
 		{
-		case 1:
-			player = (Player*)KnightCharacter().CreateJobClass();
-			player->SetWeapon(KnightCharacter().CreateWeapon());
+			player = characterlist[input - 1]->CreateJobClass();
+			player->SetWeapon(characterlist[input - 1]->CreateWeapon());
+
+			for (vector<CharacterFactory*>::iterator i = characterlist.begin(); i != characterlist.end(); i++)
+			{
+				delete *i;
+			}
+
+			vector<CharacterFactory*>().swap(characterlist);
 			return;
-		case 2:
-			player = (Player*)ArcherCharacter().CreateJobClass();
-			player->SetWeapon(ArcherCharacter().CreateWeapon());
-			return;
-		case 3:
-			player = (Player*)ThiffCharacter().CreateJobClass();
-			player->SetWeapon(ArcherCharacter().CreateWeapon());
-			return;
-		case 4:
-			player = (Player*)WizardCharacter().CreateJobClass();
-			player->SetWeapon(ArcherCharacter().CreateWeapon());
-			return;
-		default:
-			break;
 		}
 	}
 }

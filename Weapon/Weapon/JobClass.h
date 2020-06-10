@@ -2,42 +2,50 @@
 #include "Macro.h"
 #include "Weapon.h"
 
-class JobClass
+class Character
 {
 public:
-	void SetWeapon(Weapon* _weapon);
+	Character();
+	 ~Character();
 	virtual bool EquipCheck(Inventory* item) = 0;
-	void DisplayAll();
 	inline Inventory* GetInventory() { return bag; }
-private:
-	Bag *bag;
+	void SetWeapon(Weapon* _weapon);
+	void DisplayAll();
 protected:
 	Weapon* GetWeapon();
 private:
-	Weapon * weapon;
-
+	Weapon* weapon;
+	Bag *bag;
 };
 
-class Knight : public JobClass
+class Knight : public Character
 {
 public:
+	Knight() {};
+	~Knight() {};
 	virtual bool EquipCheck(Inventory* item);
 };
 
-class Archer : public JobClass
+class Archer : public Character
 {
 public:
+	Archer() {};
+	~Archer() {};
 	virtual bool EquipCheck(Inventory* item);
 };
 
-class Wizard : public JobClass
+class Wizard : public Character
 {
 public:
+	Wizard() {};
+	~Wizard() {};
 	virtual bool EquipCheck(Inventory* item);
 };
 
-class Thiff : public JobClass
+class Thiff : public Character
 {
 public:
+	Thiff() {};
+	~Thiff() {};
 	virtual bool EquipCheck(Inventory* item);
 };

@@ -4,42 +4,42 @@ CharacterFactory::~CharacterFactory()
 {
 }
 
-Weapon * KnightCharacter::CreateWeapon()
+Weapon* KnightCharacter::CreateWeapon()
 {
 	return new Sword("맨손",1,0);
 }
 
-JobClass * KnightCharacter::CreateJobClass()
+Character* KnightCharacter::CreateJobClass()
 {
 	return new Knight();
 }
 
-Weapon * ArcherCharacter::CreateWeapon()
+Weapon* ArcherCharacter::CreateWeapon()
 {
 	return new Bow("맨손", 1, 0);
 }
 
-JobClass * ArcherCharacter::CreateJobClass()
+Character* ArcherCharacter::CreateJobClass()
 {
 	return new Archer();
 }
 
-Weapon * WizardCharacter::CreateWeapon()
+Weapon* WizardCharacter::CreateWeapon()
 {
 	return new Wand("맨손",1,0);
 }
 
-JobClass * WizardCharacter::CreateJobClass()
+Character* WizardCharacter::CreateJobClass()
 {
 	return new Wizard();
 }
 
-Weapon * ThiffCharacter::CreateWeapon()
+Weapon* ThiffCharacter::CreateWeapon()
 {
 	return new Dagger("맨손", 1, 0);
 }
 
-JobClass * ThiffCharacter::CreateJobClass()
+Character* ThiffCharacter::CreateJobClass()
 {
 	return new Thiff();
 }

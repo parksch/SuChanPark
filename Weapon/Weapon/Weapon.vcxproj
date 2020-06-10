@@ -127,7 +127,6 @@
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="JobClass.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Player.cpp" />
     <ClCompile Include="WeaponManager.cpp" />
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
@@ -136,7 +135,6 @@
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="JobClass.h" />
     <ClInclude Include="Macro.h" />
-    <ClInclude Include="Player.h" />
     <ClInclude Include="Singleton.h" />
     <ClInclude Include="WeaponManager.h" />
     <ClInclude Include="Weapon.h" />
