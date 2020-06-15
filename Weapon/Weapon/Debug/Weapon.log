@@ -1,7 +1,0 @@
-﻿  WeaponManager.cpp
-c:\users\sakoe\source\repos\weapon\weapon\weaponmanager.cpp(3): warning C4356: 'Singleton<WeaponManager>::m_This': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
-c:\users\sakoe\source\repos\weapon\weapon\weaponmanager.cpp(8): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
-  main.cpp
-c:\users\sakoe\source\repos\weapon\weapon\main.cpp(4): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  코드를 생성하고 있습니다...
-  Weapon.vcxproj -> C:\Users\sakoe\source\repos\Weapon\Debug\Weapon.exe

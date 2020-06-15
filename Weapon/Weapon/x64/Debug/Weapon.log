@@ -1,4 +1,0 @@
-﻿  main.cpp
-c:\users\sakoe\desktop\suchanpark\weapon\weapon\inventory.h(41): warning C4267: 'return': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\weapon\weapon\main.cpp(9): warning C4326: 'main'의 반환 형식이 'int'이어야 하는데 'void'입니다.
-  Weapon.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\Weapon\x64\Debug\Weapon.exe
