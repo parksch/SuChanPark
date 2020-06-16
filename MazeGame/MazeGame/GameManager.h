@@ -1,6 +1,7 @@
 #pragma once
 #include "ObjectFactory.h"
 #include "Interface.h"
+#include <math.h>
 
 class GameManager : public Singleton<GameManager>
 {
@@ -9,14 +10,17 @@ public:
 	~GameManager();
 	void Start();
 	int CollisionCheck(Point pos,int code);
+	int ObjectLength(Point pos, int code);
+	void Game_Fail();
+	Point ObjectPos(int code);
 	void Stage_Clear();
+	inline const Point Getsize() { return MapSize; };
 private:
 	void Start_Menu();
 	void Game_Enter();
 	void Game_Excute();
 	void Game_Exit();
 	void Stage_Load();
-	void Create(int code, int x, int y, int &count);
 private:
 	int m_CurStage;
 	bool isPlay;

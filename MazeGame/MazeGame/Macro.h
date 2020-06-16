@@ -6,6 +6,7 @@
 #include <fstream>
 #include <vector>
 #include <list>
+#include <time.h>
 
 using namespace std;
 #define DEFAULT_WIDTH 15
@@ -13,8 +14,7 @@ using namespace std;
 #define WALL 1
 #define PLAYER 2
 #define DOOR 3
-#define POTAL 4
-#define TRAP 5
+#define BOSS 4
 #define MAXSTAGE 3
 
 #define col GetStdHandle(STD_OUTPUT_HANDLE) 

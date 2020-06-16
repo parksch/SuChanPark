@@ -26,4 +26,56 @@ protected:
 	int Y;
 };
 
+class Observer :public Object
+{
+public:
+	virtual void Notify() = 0;
+};
+
+class BossAlarm : public Object
+{
+public:
+	BossAlarm() {};
+	~BossAlarm() {};
+
+	//감시할 옵저버 등록
+	void AddPlayer(Observer* player)
+	{
+		players.push_back(player);
+	}
+
+	//감시가 끝난 옵저버 해제
+	void RemovePlayer(Observer* player)
+	{
+		vector<Observer*>::iterator seek = find(players.begin(), players.end(), player);
+		players.erase(seek);
+	}
+
+	//노티피 케이션 등록
+	void Notification()
+	{
+		vector<Observer*>::iterator seek = players.begin();
+		vector<Observer*>::iterator end = players.end();
+
+		while (seek != end)
+		{
+			(*seek)->Notify();
+			seek++;
+		}
+
+	}
+
+	void Notification(Observer* player)
+	{
+		if (isAppear)
+		{
+			player->Notify();
+		}
+	}
+
+protected:
+	bool isAppear;
+private:
+	vector<Observer*> players;
+};
 

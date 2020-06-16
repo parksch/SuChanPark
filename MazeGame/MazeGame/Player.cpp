@@ -94,7 +94,25 @@ void Player::Collision_Handle(int Code)
 	case DOOR:
 		GameManager::GetInstacne()->Stage_Clear();
 		return;
+	case BOSS:
+		GameManager::GetInstacne()->Game_Fail();
 	default:
 		break;
 	}
+}
+
+void Player::Notify()
+{
+	Point pos = GameManager::GetInstacne()->Getsize();
+	m_MapDraw.DrawMidText("보스가 나타났다", pos.X, pos.Y + 1);
+	getch();
+	for (int i = 0; i < strlen("보스가 나타났다"); i++)
+	{
+		m_MapDraw.ErasePoint(pos.X - strlen("보스가 나타났다") + i, pos.Y + 1);
+	}
+}
+
+void Player::SetBossAlarm(BossAlarm * alarm)
+{
+	alarm->AddPlayer(this);
 }

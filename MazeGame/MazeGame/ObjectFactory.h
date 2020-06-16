@@ -2,6 +2,7 @@
 #include "Singleton.h"
 #include "Object.h"
 #include "Player.h"
+#include "Monster.h"
 #include "Door.h"
 
 class ObjectFactory : public Singleton<ObjectFactory>

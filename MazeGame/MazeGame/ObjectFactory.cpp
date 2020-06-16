@@ -10,6 +10,8 @@ Object * ObjectFactory::Create(int code, int x, int y)
 		return new Player(code, x, y);
 	case DOOR:
 		return new Door(code, x, y);
+	case BOSS:
+		return new Boss(code, x, y);
 	default:
 		break;
 	}

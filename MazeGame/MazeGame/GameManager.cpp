@@ -5,7 +5,7 @@ GameManager* GameManager::m_Instance = NULL;
 GameManager::GameManager() :MapSize(DEFAULT_WIDTH, DEFAULT_HEIGHT)
 {
 	char buf[256];
-	sprintf(buf, "mode con: lines=%d cols=%d", MapSize.Y + 1, MapSize.X * 2);
+	sprintf(buf, "mode con: lines=%d cols=%d", MapSize.Y + 3, MapSize.X * 2);
 	system(buf);
 	m_CurStage = 0;
 }
@@ -47,9 +47,43 @@ int GameManager::CollisionCheck(Point pos, int code)
 	return 0;
 }
 
+int GameManager::ObjectLength(Point pos, int code)
+{
+	Object *obj;
+	for (list<Object*>::iterator i = objects.begin(); i != objects.end(); i++)
+	{
+		if ((*i)->getCode() == code)
+		{
+			obj = (*i);
+			break;
+		}
+	}
+	
+	return (int)sqrt((pow(obj->getX() - pos.X, 2)) + (pow(obj->getY() - pos.Y, 2)));
+}
+
+void GameManager::Game_Fail()
+{
+	if (isPlay)
+	{
+		isPlay = false;
+		m_CurStage--;
+	}
+}
+
+Point GameManager::ObjectPos(int code)
+{
+	for (list<Object*>::iterator i = objects.begin(); i != objects.end(); i++)
+	{
+		if ((*i)->getCode() == code)
+		{
+			return Point((*i)->getX(), (*i)->getY());
+		}
+	}
+}
+
 void GameManager::Start_Menu()
 {
-
 	while (1)
 	{
 		system("cls");
@@ -75,8 +109,6 @@ void GameManager::Stage_Load()
 	while (m_CurStage < MAXSTAGE)
 	{
 		Game_Enter();
-		Game_Excute();
-		Game_Exit();
 	}
 }
 
@@ -111,7 +143,7 @@ void GameManager::Game_Enter()
 	{
 		MapSize = temp;
 		char buf[256];
-		sprintf(buf, "mode con: lines=%d cols=%d", MapSize.Y + 1, MapSize.X * 2);
+		sprintf(buf, "mode con: lines=%d cols=%d", MapSize.Y + 3, MapSize.X * 2);
 		system(buf);
 	}
 
@@ -155,12 +187,34 @@ void GameManager::Game_Enter()
 	}
 	
 	file.close();
-	getch();
+	Game_Excute();
 }
 
 void GameManager::Game_Excute()
 {
 	isPlay = true;
+
+	if (m_CurStage == MAXSTAGE -1)
+	{
+		Player *player;
+		BossAlarm *boss;
+
+		for (list<Object*>::iterator i = objects.begin(); i != objects.end() ; i++)
+		{
+			switch ((*i)->getCode())
+			{
+			case PLAYER:
+				player = (Player*)(*i);
+				break;
+			case BOSS:
+				boss = (BossAlarm*)(*i);
+				break;
+			default:
+				break;
+			}
+		}
+		player->SetBossAlarm(boss);
+	}
 
 	while (isPlay)
 	{
@@ -169,6 +223,8 @@ void GameManager::Game_Excute()
 			(*i)->Update();
 		}
 	}
+
+	Game_Exit();
 }
 
 void GameManager::Game_Exit()
@@ -183,10 +239,3 @@ void GameManager::Game_Exit()
 	objects.clear();
 	m_CurStage++;
 }
-
-
-void GameManager::Create(int code, int x, int y, int & count)
-{
-
-}
-
