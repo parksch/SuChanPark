@@ -5,17 +5,6 @@ LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 HINSTANCE g_hInst;
 LPCTSTR lpszClass = TEXT("HELLO");
 
-typedef struct Pos
-{
-	struct Pos(int X, int Y) : x(X), y(Y) {}
-	struct Pos() : x(0), y(0) {}
-	int x;
-	int y;
-}POS;
-
-POS Lerp(POS st, POS end, float r);
-POS Bezier(POS p1, POS p2, POS p3, POS p4, float r);
-
 int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance, PSTR szCmdLine,int nCmdShow)
 {
 	HWND hWnd;
@@ -58,73 +47,67 @@ int APIENTRY WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance, PSTR szCmdLine
 	return (int)Message.wParam;
 }
 
+int x = 0;
+int y = 0;
+int mx = 0;
+int my = 0;
+
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
 	HDC hdc;
 	PAINTSTRUCT ps;
-	POS p1;
-	POS p2;
-	POS p3;
-	POS u;
+	RECT rect = {200,200,800,400};
 	switch (iMessage)
 	{ 
-	case WM_PAINT: 
-		hdc = BeginPaint(hWnd, &ps);
-		for (int i = 0; i < 360; i++) 
-			SetPixel(hdc, 300 + (sin(i) * 135), 300 + (cos(i) * 90), RGB(255, 0, 0));
-
-		for (int i = 1; i < 91; i++)
-		{   
-			p1.x = 0;
-			p1.y = -90;
-			p2.x = 90;
-			p2.y = -90;
-			p3.x = 90;
-			p3.y = 0;
-			u = Bezier(p1, Lerp(p1, p2, 0.5f), Lerp(p2, p3, 0.5f), p3, i / 90.0f);
-			SetPixel(hdc, 300 + (u.x), 100 + (u.y), RGB(0, 255, 0));
-		}
-
-		for (int i = 1; i < 91; i++)
+	case WM_MOUSEMOVE:
+		mx = LOWORD(lParam);
+		my = HIWORD(lParam);
+		InvalidateRect(hWnd, NULL, true);
+		break;
+	case WM_LBUTTONDOWN:
+		break;
+	case WM_KEYDOWN:
+		switch (wParam)
 		{
-			p1.x = 90;
-			p1.y = 0;
-			p2.x = 90;
-			p2.y = 90;
-			p3.x = 0;
-			p3.y = 90;
-			u = Bezier(p1, Lerp(p1, p2, 0.5f), Lerp(p2, p3, 0.5f), p3, i / 90.0f);
-			SetPixel(hdc, 300 + (u.x), 100 + (u.y), RGB(0, 255, 0));
+		case VK_LEFT:
+			x -= 5;
+			break;
+		case VK_RIGHT:
+			x += 5;
+			break;
+		case VK_UP:
+			y -= 5;
+			break;
+		case VK_DOWN:
+			y += 5;
+		default:
+			break;
 		}
-
-		for (int i = 1; i < 91; i++)
+		InvalidateRect(hWnd, NULL, true);
+		break;
+	case WM_PAINT:
+		hdc =BeginPaint(hWnd, &ps);
+		Ellipse(hdc, 100 + x, 100 + y, 200 + x, 200 + y);
+		Rectangle(hdc, rect.left, rect.top, rect.right,rect.bottom);
+		if (mx - 50 < rect.left)
 		{
-			p1.x = 0;
-			p1.y = 90;
-			p2.x = -90;
-			p2.y = 90;
-			p3.x = -90;
-			p3.y = 0;
-			u = Bezier(p1, Lerp(p1, p2, 0.5f), Lerp(p2, p3, 0.5f), p3, i / 90.0f);
-			SetPixel(hdc, 300 + (u.x), 100 + (u.y), RGB(0, 255, 0));
+			mx -= 50 + (mx - 100 - rect.left);
 		}
-
-		for (int i = 1; i < 91; i++)
+		if (mx + 50 > rect.right)
 		{
-			p1.x = -90;
-			p1.y = 0;
-			p2.x = -90;
-			p2.y = -90;
-			p3.x = 0;
-			p3.y = -90;
-			u = Bezier(p1, Lerp(p1, p2, 0.5f), Lerp(p2, p3, 0.5f), p3, i / 90.0f);
-			SetPixel(hdc, 300 + (u.x), 100 + (u.y), RGB(0, 255, 0));
+			mx += 50 - (mx + 100 - rect.right );
 		}
-
-	/*	Rectangle(hdc, 50, 100, 200, 180); 
-		Ellipse(hdc, 220, 100, 400, 200); */
+		if (my - 50 < rect.top)
+		{
+			my -= 50 + (my - 100 - rect.top);
+		}
+		if (my + 50 > rect.bottom)
+		{
+			my += 50 - (my + 100 - rect.bottom);
+		}
+		Ellipse(hdc,  mx - 50, my - 50, mx + 50 , 50 +my);
 		EndPaint(hWnd, &ps);
-		return 0; 
+		break;
 	case WM_DESTROY:
 		PostQuitMessage(0);
 			return 0;
@@ -132,20 +115,4 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 	return (DefWindowProc(hWnd,iMessage,wParam,lParam));
 }
 
-POS Lerp(POS st, POS end, float r)
-{
-	POS result;
-	result = POS(st.x + ((end.x - st.x) * r), st.y + ((end.y - st.y) * r));
-	return result;
-}
-
-POS Bezier(POS p1, POS p2, POS p3, POS p4, float r)
-{
-	POS a = Lerp(p1,p2,r);
-	POS b = Lerp(p2, p3, r);
-	POS c = Lerp(p3, p4, r);
-	POS d = Lerp(a,b,r);
-	POS e = Lerp(b,c,r);
-	return Lerp(d,e,r);
-}
 
