@@ -51,6 +51,7 @@ int x = 0;
 int y = 0;
 int mx = 0;
 int my = 0;
+bool change = true;
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
@@ -65,6 +66,11 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		InvalidateRect(hWnd, NULL, true);
 		break;
 	case WM_LBUTTONDOWN:
+		if (MessageBox(hWnd,TEXT("도형 바꾸기?"), TEXT("도형 바꾸기"),MB_YESNO ) == IDYES)
+		{
+			change = !change;
+			InvalidateRect(hWnd, NULL, true);
+		}
 		break;
 	case WM_KEYDOWN:
 		switch (wParam)
@@ -105,7 +111,14 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 		{
 			my += 50 - (my + 100 - rect.bottom);
 		}
-		Ellipse(hdc,  mx - 50, my - 50, mx + 50 , 50 +my);
+		if (change)
+		{
+			Ellipse(hdc, mx - 50, my - 50, mx + 50, 50 + my);
+		}
+		else
+		{
+			Rectangle(hdc, mx - 50, my - 50, mx + 50, 50 + my);
+		}
 		EndPaint(hWnd, &ps);
 		break;
 	case WM_DESTROY:
