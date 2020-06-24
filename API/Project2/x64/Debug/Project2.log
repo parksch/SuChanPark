@@ -1,9 +1,0 @@
-﻿  main.cpp
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(101): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(110): warning C4267: '인수': 'size_t'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(108): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(107): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(114): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(116): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-c:\users\sakoe\desktop\suchanpark\api\project2\main.cpp(118): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Project2.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\API\x64\Debug\Project2.exe
