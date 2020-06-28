@@ -18,22 +18,68 @@
     <ClCompile Include="main.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="WinCreator.cpp">
+    <ClCompile Include="ResourceManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceManager.cpp">
+    <ClCompile Include="BitMap.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="WinCreator.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Singleton.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="ResourceManager.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="BitMap.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="WinAPI.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="00.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="01.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="02.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="03.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="04.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="05.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="06.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="07.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="08.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="09.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
   </ItemGroup>
 </Project>

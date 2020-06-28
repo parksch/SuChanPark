@@ -4,7 +4,7 @@ template <class T>
 class Singleton
 {
 public:
-	T* GetInstance() 
+	static T* GetInstance() 
 	{
 		if (m_pThis == nullptr)
 			m_pThis = new T;
@@ -20,7 +20,7 @@ public:
 	}
 protected:
 	Singleton() {}
-	~Singleton() {}
+	virtual ~Singleton(){};
 private:
 	static T* m_pThis;
 };
