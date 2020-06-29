@@ -22,11 +22,10 @@ void BitMap::Init(HDC hdc, HINSTANCE hInst,int code)
 	m_size.cy = Bit_Info.bmHeight;
 }
 
-void BitMap::Draw(HDC hdc, int x, int y)
+void BitMap::Point(int x, int y)
 {
 	m_StartX = x;
 	m_StartY = y;
-	BitBlt(hdc, m_StartX, m_StartY, m_size.cx, m_size.cy, MemDC, 0, 0, SRCCOPY);
 }
 
 bool BitMap::CollisionCheck(int x, int y)

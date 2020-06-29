@@ -1,11 +1,11 @@
 #include <Windows.h>
 #include "ResourceManager.h"
-#include "GameManager.h"
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 HINSTANCE g_Inst;
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdParam, int ncmdShow)
 {
+	_CrtSetDbgFlag(_CRTDBG_LEAK_CHECK_DF | _CRTDBG_ALLOC_MEM_DF);
 	HWND hWnd;
 	MSG Message;
 	WNDCLASS WndClass;
@@ -49,27 +49,21 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdPa
 
 LRESULT CALLBACK WndProc(HWND hWnd, UINT iMessage, WPARAM wParam, LPARAM lParam)
 {
-	HDC hdc;
 
 	switch (iMessage)
 	{
 	case WM_CREATE:
-		hdc = GetDC(hWnd);
-		ResourceManager::GetInstance()->Init(hdc, g_Inst);
-		ReleaseDC(hWnd, hdc);
+		ResourceManager::GetInstance()->Init(hWnd, g_Inst);
 		return 0;
 	case WM_PAINT:
-		hdc = GetDC(hWnd);
-		ResourceManager::GetInstance()->Draw(hdc, 1280, 1024);
-		ReleaseDC(hWnd, hdc);
+		ResourceManager::GetInstance()->Draw(hWnd, 1280, 1024);
 		return 0;
 	case WM_LBUTTONDOWN:
-		GameManager::GetInstance()->CollisionCheck(hWnd, LOWORD(lParam), HIWORD(lParam));
+		ResourceManager::GetInstance()->CollisonCheck(hWnd,LOWORD(lParam), HIWORD(lParam));
 		return 0;
 	case WM_DESTROY:
 		PostQuitMessage(0);
 		ResourceManager::GetInstance()->DestoryInstance();
-		GameManager::GetInstance()->DestoryInstance();
 		return 0;
 	}
 

@@ -144,13 +144,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BitMap.cpp" />
-    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BitMap.h" />
-    <ClInclude Include="GameManager.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="Singleton.h" />

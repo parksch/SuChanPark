@@ -7,8 +7,10 @@ public:
 	BitMap();
 	~BitMap();
 	void Init(HDC hdc,HINSTANCE hInstance,int code);
-	void Draw(HDC hdc, int x, int y);
+	void Point(int x, int y);
 	bool CollisionCheck(int x,int y);
+	HDC GetMemDC(){ return MemDC; }
+	SIZE GetSize() { return m_size; }
 private:
 	HDC		MemDC;
 	HBITMAP	m_pMyBitMap;

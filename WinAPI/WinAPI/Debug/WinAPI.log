@@ -1,5 +1,6 @@
-﻿  BITMapManager.cpp
+﻿  BitMap.cpp
+  ResourceManager.cpp
+c:\users\sakoe\desktop\suchanpark\winapi\winapi\resourcemanager.cpp(3): warning C4356: 'Singleton<ResourceManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
   main.cpp
-  WinCreator.cpp
   코드를 생성하고 있습니다...
   WinAPI.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\WinAPI\Debug\WinAPI.exe

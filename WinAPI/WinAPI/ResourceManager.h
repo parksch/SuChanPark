@@ -10,10 +10,12 @@ class ResourceManager : public Singleton<ResourceManager>
 public:
 	ResourceManager();
 	~ResourceManager();
-	void Init(HDC hdc,HINSTANCE hInstance);
-	void Draw(HDC hdc,int wndSizeX,int wndSizeY);
-	int CollisonCheck(int x,int y);
+	void Init(HWND hWnd,HINSTANCE hInstance);
+	void Draw(HWND hWnd,int wndSizeX,int wndSizeY);
+	void CollisonCheck(HWND hWnd,int x,int y);
 private:
 	vector<BitMap*> m_BitMaps;
+	HDC hdc;
+	PAINTSTRUCT ps;
 };
 
