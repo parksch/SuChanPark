@@ -1,0 +1,7 @@
+﻿  SceneManager.cpp
+c:\users\sakoe\desktop\suchanpark\minesweeper\minesweeper\scenemanager.cpp(81): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\minesweeper\minesweeper\scenemanager.cpp(89): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\minesweeper\minesweeper\scenemanager.cpp(98): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\minesweeper\minesweeper\scenemanager.cpp(128): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\minesweeper\minesweeper\scenemanager.cpp(135): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Minesweeper.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\Minesweeper\Debug\Minesweeper.exe

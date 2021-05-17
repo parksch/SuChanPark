@@ -1,0 +1,27 @@
+﻿  main.cpp
+  Manager.cpp
+  ServerManager.cpp
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(42): error C4996: 'WSAAsyncSelect': Use WSAEventSelect() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2680): note: 'WSAAsyncSelect' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(66): error C2664: 'int MessageBoxW(HWND,LPCWSTR,LPCWSTR,UINT)': 인수 3을(를) 'const char *'에서 'LPCWSTR'(으)로 변환할 수 없습니다.
+  c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(66): note: 가리킨 형식이 관련이 없습니다. 변환하려면 reinterpret_cast, C 스타일 캐스트 또는 함수 스타일 캐스트가 필요합니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C2143: 구문 오류: ')'이(가) 'const' 앞에 없습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C3861: 'L': 식별자를 찾을 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C2143: 구문 오류: ';'이(가) 'const' 앞에 없습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C2059: 구문 오류: ')'
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C2373: 'lpMsgBuf': 재정의. 형식 한정자가 다릅니다.
+  c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(73): note: 'lpMsgBuf' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C2734: 'Lmsg': const 개체는 extern이 아닌 경우 초기화될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(78): error C2059: 구문 오류: '상수'
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(89): error C2143: 구문 오류: ')'이(가) 'const' 앞에 없습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(89): error C3861: 'L': 식별자를 찾을 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(89): error C2143: 구문 오류: ';'이(가) 'const' 앞에 없습니다.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(89): error C2059: 구문 오류: ')'
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(89): error C2373: 'lpMsgBuf': 재정의. 형식 한정자가 다릅니다.
+  c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(84): note: 'lpMsgBuf' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(89): error C2059: 구문 오류: '문자열'
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(128): error C4996: 'WSAAsyncSelect': Use WSAEventSelect() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(2680): note: 'WSAAsyncSelect' 선언을 참조하십시오.
+c:\users\sakoe\desktop\suchanpark\chess\wsaasyncselectchessserver\wsaasyncselectchessserver\servermanager.cpp(263): error C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  c:\program files (x86)\windows kits\10\include\10.0.17763.0\um\winsock2.h(1849): note: 'inet_ntoa' 선언을 참조하십시오.
+  코드를 생성하고 있습니다...

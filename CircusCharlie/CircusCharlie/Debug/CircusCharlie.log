@@ -1,0 +1,108 @@
+﻿  BitMap.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\bitmap.cpp(49): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\bitmap.cpp(54): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\bitmap.cpp(59): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Cash.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\cash.cpp(57): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Charlie.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(48): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(77): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(89): warning C4244: '-=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(131): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(132): warning C4244: '=': 'double'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(134): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(136): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(138): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(139): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\charlie.cpp(255): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  CollisionManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\collisionmanager.cpp(3): warning C4356: 'Singleton<CollisionManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\collisionmanager.cpp(26): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  End.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\end.cpp(25): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\end.cpp(26): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\end.cpp(53): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\end.cpp(63): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  FireJar.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firejar.cpp(41): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firejar.cpp(42): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firejar.cpp(44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firejar.cpp(76): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firejar.cpp(86): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firejar.cpp(88): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  FireRing.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(42): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(54): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(58): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(83): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(84): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(85): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(89): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(91): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(147): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(148): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(149): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(153): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(155): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(170): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(171): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\firering.cpp(176): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  GameMap.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(36): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(36): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(40): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(40): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(44): warning C4244: '인수': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(44): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(49): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(50): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(78): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\gamemap.cpp(78): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameScene.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  InputManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\inputmanager.cpp(3): warning C4356: 'Singleton<InputManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\inputmanager.cpp(34): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\inputmanager.cpp(69): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\inputmanager.cpp(82): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\inputmanager.cpp(95): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\inputmanager.cpp(108): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  main.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  MapManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\mapmanager.cpp(9): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  MenuMap.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\menumap.cpp(92): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\menumap.cpp(100): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\menumap.cpp(108): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MenuScene.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  ResourceManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  SceneManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\scenemanager.cpp(59): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  TimeManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\timemanager.cpp(3): warning C4356: 'Singleton<TimeManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\timemanager.cpp(17): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  UIManager.cpp
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\resourcemanager.h(21): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\uimanager.cpp(3): warning C4356: 'Singleton<UIManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\uimanager.cpp(89): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\uimanager.cpp(91): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\uimanager.cpp(95): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  코드를 생성하고 있습니다...
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\menuscene.cpp(37): warning C4715: 'MenuScene::Input': 모든 제어 경로에서 값을 반환하지는 않습니다.
+c:\users\sakoe\desktop\suchanpark\circuscharlie\circuscharlie\mapmanager.cpp(33): warning C4715: 'MapManager::GetMap': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  CircusCharlie.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\CircusCharlie\Debug\CircusCharlie.exe

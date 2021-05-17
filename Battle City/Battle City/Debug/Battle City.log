@@ -1,0 +1,118 @@
+﻿  Animation.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\animation.cpp(61): warning C4244: '인수': 'LONG'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  BitMap.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\bitmap.cpp(43): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Block.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(15): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(16): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(103): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(132): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(142): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(158): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(160): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(161): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(162): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(177): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(178): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(179): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(184): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(185): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(186): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(191): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(192): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(193): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(214): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(215): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(216): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(217): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(218): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(223): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(224): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(225): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(226): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(227): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(239): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(240): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(241): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(242): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\block.cpp(243): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  EditScene.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(23): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(45): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(53): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(55): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(57): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(59): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(67): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(69): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(74): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(75): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(76): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(77): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(79): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(80): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(81): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(82): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(199): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(198): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(197): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(196): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(205): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(204): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(218): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(216): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(229): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(234): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(235): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\editscene.cpp(324): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  Explosion.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\explosion.cpp(19): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  GameManager.cpp
+  GameScene.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(58): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(61): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(99): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(100): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(125): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(124): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(138): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(137): warning C4244: '인수': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(145): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(146): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(148): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(280): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(318): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\gamescene.cpp(320): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  MenuScene.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\menuscene.cpp(29): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\menuscene.cpp(94): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\menuscene.cpp(96): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\menuscene.cpp(97): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\menuscene.cpp(98): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Player.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\player.cpp(59): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Projectile.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\projectile.cpp(21): warning C4244: '인수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\projectile.cpp(57): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\projectile.cpp(58): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\projectile.cpp(65): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\projectile.cpp(66): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  ResourceManager.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\resourcemanager.cpp(3): warning C4356: 'Singleton<ResourceManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\resourcemanager.cpp(41): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  SceneManager.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\scenemanager.cpp(7): warning C4356: 'Singleton<SceneManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+  SmallExplosion.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\smallexplosion.cpp(19): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\smallexplosion.cpp(20): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Tank.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\tank.cpp(27): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\tank.cpp(28): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\tank.cpp(120): warning C4244: '=': 'float'에서 'LONG'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  TimeManager.cpp
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\timemanager.cpp(3): warning C4356: 'Singleton<TimeManager>::m_pThis': 정적 데이터 멤버는 파생 클래스를 통해 초기화할 수 없습니다.
+c:\users\sakoe\desktop\suchanpark\battle city\battle city\timemanager.cpp(17): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  main.cpp
+  코드를 생성하고 있습니다...
+  Battle City.vcxproj -> C:\Users\sakoe\Desktop\SuChanPark\Battle City\Debug\Battle City.exe
